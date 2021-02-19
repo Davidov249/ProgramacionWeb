@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import Navbar from './Components/Navbar/index'
+import about from './Pages/about';
+import service from './Pages/service';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Navbar />
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/about" component={about} />
+      <Route path="/service" component={service} />
+
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
