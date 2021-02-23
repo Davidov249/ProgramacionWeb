@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import {Navbar, Nav, Container, Button, Form} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 
@@ -24,7 +24,11 @@ const navbar = () => {
                 </Nav>
             </Navbar.Collapse>
             <Form inline>
-                <Button variant="outline-info">Login</Button>
+                <Link to="/mread">
+                    <Button variant="outline-info">
+                        Login
+                    </Button>
+                </Link>
             </Form>
             </Container>
         </Navbar>

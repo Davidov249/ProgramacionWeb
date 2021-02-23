@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Navbar from './Components/Navbar/index'
 import about from './Pages/about';
 import service from './Pages/service';
+import Read from './Pages/Music/Read';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route exact path="/" component={App} />
       <Route path="/about" component={about} />
       <Route path="/service" component={service} />
+      <Route path="/mread" component={Read} />
 
     </Switch>
   </BrowserRouter>,
