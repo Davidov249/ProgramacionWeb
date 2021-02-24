@@ -7,32 +7,28 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 const navbar = () => {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
-            <LinkContainer to="/">
-                <Navbar.Brand>Logo</Navbar.Brand>
-            </LinkContainer>
-            <Container>
-            <Navbar.Toggle aria-controls="basic-navbar-nav flex" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <LinkContainer to="/service">
+      <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar.Brand><Link to="/">Logo</Link></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav flex" />
+        <Container>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <LinkContainer to="/service">
                 <Nav.Link>Service</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/about">
+              </LinkContainer>
+              <LinkContainer to="/about">
                 <Nav.Link>About</Nav.Link>
-                </LinkContainer>
-                </Nav>
-            </Navbar.Collapse>
+              </LinkContainer>
+            </Nav>
             <Form inline>
                 <Link to="/mread">
-                    <Button variant="outline-info">
-                        Login
-                    </Button>
+                  <Button variant="outline-info">Login</Button>
                 </Link>
-            </Form>
-            </Container>
-        </Navbar>
-    )
+              </Form>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    );
 }
 
 export default navbar

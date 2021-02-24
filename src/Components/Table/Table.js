@@ -1,6 +1,7 @@
 import React from 'react'
+import {Table} from 'react-bootstrap'
 
-export default class Table extends React.Component {
+export default class CustomTable extends React.Component {
 
     constructor(props) {
         super(props);
@@ -31,6 +32,7 @@ export default class Table extends React.Component {
 
 
     render() {
+        console.log("Probando que esta cosa no muera a lo bestia")
         return (
             <Table striped hover responsive variant="dark">
                 <thead>
