@@ -32,7 +32,6 @@ export default class CustomTable extends React.Component {
 
 
     render() {
-        console.log("Probando que esta cosa no muera a lo bestia")
         return (
             <Table striped hover responsive variant="dark">
                 <thead>

@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar/index'
 import about from './Pages/about';
 import service from './Pages/service';
 import Read from './Pages/Music/Read';
+import Create from './Pages/Music/Create';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path="/about" component={about} />
       <Route path="/service" component={service} />
       <Route path="/mread" component={Read} />
+      <Route path="/mcreate" component={Create} />
 
     </Switch>
   </BrowserRouter>,

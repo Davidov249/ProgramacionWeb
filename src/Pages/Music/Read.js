@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomTable from '../../Components/Table/Table'
 import {Container, Button, Row, Col} from 'react-bootstrap'
-import Link from 'react-router-bootstrap'
+import { Link, NavLink } from 'react-router-dom'
 
 const Read = () => {
     return (
@@ -12,9 +12,11 @@ const Read = () => {
                         <h1>Playlist</h1>
                     </Col>
                     <Col sm={1} xs={2} className="d-flex">
-                        <Button variant="dark" className="pull-right align-self-center" >
-                            Agregar
-                        </Button>
+                        <Link to="/mcreate">
+                            <Button variant="dark" className="pull-right align-self-center">
+                                Agregar
+                            </Button>
+                        </Link>
                     </Col>
                 </Row>
                 <Row>
